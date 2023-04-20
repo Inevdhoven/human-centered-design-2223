@@ -93,49 +93,77 @@ function addMessage(data) {
 //     video.play();
 // });
 
-const video = document.getElementById('video');
-const canvas = document.getElementById('canvas');
-const snap = document.getElementById('snap');
-const uploadBtn = document.getElementById('upload-btn');
-const cameraBtn = document.getElementById('camera-btn');
-const cameraContainer = document.getElementById('camera-container');
-const uploadUrl = "https://example.com/upload"; // URL om de afbeelding naar te uploaden
+// const video = document.getElementById('video');
+// const canvas = document.getElementById('canvas');
+// const snap = document.getElementById('snap');
+// const uploadBtn = document.getElementById('upload-btn');
+// const cameraContainer = document.getElementById('camera-container');
+// const uploadUrl = "https://example.com/upload"; // URL om de afbeelding naar te uploaden
 
-const constraints = {
-    video: true
+// const constraints = {
+//     video: true
+// };
+
+// async function startCamera() {
+//     try {
+//         const stream = await navigator.mediaDevices.getUserMedia(constraints);
+//         handleSuccess(stream);
+//         cameraContainer.style.display = 'block';
+//         video.classList.add('active');
+//         canvas.classList.add('active');
+//     } catch (e) {
+//         console.error('Error: ', e);
+//     }
+// }
+
+// function handleSuccess(stream) {
+//     window.stream = stream;
+//     video.srcObject = stream;
+// }
+
+// snap.addEventListener("click", function () {
+//     canvas.getContext("2d").drawImage(video, 0, 0, 640, 480);
+//     uploadBtn.style.display = 'block';
+// });
+
+// uploadBtn.addEventListener("click", function () {
+//     const imageData = canvas.toDataURL(); // Zet de afbeeldingdata om naar een DataURL
+//     const xhr = new XMLHttpRequest(); // Maak een nieuwe XMLHttpRequest
+//     xhr.open("POST", uploadUrl); // Stel de URL en methode in voor de upload
+//     xhr.setRequestHeader("Content-Type", "application/json"); // Stel de content-type header in
+//     xhr.send(JSON.stringify({ image: imageData })); // Verstuur de afbeeldingdata in een JSON object
+// });
+
+// // Open de camera als de pagina geladen is
+// startCamera();
+
+
+// Set constraints for the video stream
+var constraints = { video: { facingMode: "user" }, audio: false };
+// Define constants
+const cameraView = document.querySelector("#camera--view"),
+    cameraOutput = document.querySelector("#camera--output"),
+    cameraSensor = document.querySelector("#camera--sensor"),
+    cameraTrigger = document.querySelector("#camera--trigger")
+// Access the device camera and stream to cameraView
+function cameraStart() {
+    navigator.mediaDevices
+        .getUserMedia(constraints)
+        .then(function (stream) {
+            track = stream.getTracks()[0];
+            cameraView.srcObject = stream;
+        })
+        .catch(function (error) {
+            console.error("Oops. Something is broken.", error);
+        });
+}
+// Take a picture when cameraTrigger is tapped
+cameraTrigger.onclick = function () {
+    cameraSensor.width = cameraView.videoWidth;
+    cameraSensor.height = cameraView.videoHeight;
+    cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
+    cameraOutput.src = cameraSensor.toDataURL("image/webp");
+    cameraOutput.classList.add("taken");
 };
-
-async function startCamera() {
-    try {
-        const stream = await navigator.mediaDevices.getUserMedia(constraints);
-        handleSuccess(stream);
-        cameraContainer.style.display = 'block';
-        video.classList.add('active');
-        canvas.classList.add('active');
-    } catch (e) {
-        console.error('Error: ', e);
-    }
-}
-
-function handleSuccess(stream) {
-    window.stream = stream;
-    video.srcObject = stream;
-}
-
-snap.addEventListener("click", function () {
-    canvas.getContext("2d").drawImage(video, 0, 0, 640, 480);
-    uploadBtn.style.display = 'block';
-});
-
-uploadBtn.addEventListener("click", function () {
-    const imageData = canvas.toDataURL(); // Zet de afbeeldingdata om naar een DataURL
-    const xhr = new XMLHttpRequest(); // Maak een nieuwe XMLHttpRequest
-    xhr.open("POST", uploadUrl); // Stel de URL en methode in voor de upload
-    xhr.setRequestHeader("Content-Type", "application/json"); // Stel de content-type header in
-    xhr.send(JSON.stringify({ image: imageData })); // Verstuur de afbeeldingdata in een JSON object
-});
-
-// Open de camera als de pagina geladen is
-cameraBtn.addEventListener("click", function () {
-    startCamera();
-});
+// Start the video stream when the window loads
+window.addEventListener("load", cameraStart, false);
