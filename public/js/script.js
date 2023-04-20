@@ -97,6 +97,7 @@ const video = document.getElementById('video');
 const canvas = document.getElementById('canvas');
 const snap = document.getElementById('snap');
 const uploadBtn = document.getElementById('upload-btn');
+const cameraBtn = document.getElementById('camera-btn');
 const cameraContainer = document.getElementById('camera-container');
 const uploadUrl = "https://example.com/upload"; // URL om de afbeelding naar te uploaden
 
@@ -137,5 +138,4 @@ uploadBtn.addEventListener("click", function () {
 // Open de camera als de pagina geladen is
 cameraBtn.addEventListener("click", function () {
     startCamera();
-    video.play();
 });
