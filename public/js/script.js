@@ -51,11 +51,54 @@ function addMessage(data) {
     messages.scrollTop = messages.scrollHeight
 }
 
+// const video = document.getElementById('video');
+// const canvas = document.getElementById('canvas');
+// const snap = document.getElementById('snap');
+// const cameraBtn = document.getElementById('camera-btn');
+// const cameraContainer = document.getElementById('camera-container');
+
+// const constraints = {
+//     video: true
+// };
+
+// async function startCamera() {
+//     try {
+//         const stream = await navigator.mediaDevices.getUserMedia(constraints);
+//         handleSuccess(stream);
+//         cameraContainer.style.display = 'block';
+//         video.classList.add('active'); // Voeg class "active" toe aan video
+//         canvas.classList.add('active'); // Voeg class "active" toe aan canvas
+//         cameraBtn.style.display = 'none';
+//         video.play(); // Start het afspelen van de video
+//     } catch (e) {
+//         console.error('Error: ', e);
+//     }
+// }
+
+// function handleSuccess(stream) {
+//     window.stream = stream;
+//     video.srcObject = stream;
+// }
+
+// snap.addEventListener("click", function () {
+//     canvas.getContext("2d").drawImage(video, 0, 0, 640, 480);
+// });
+
+// cameraBtn.addEventListener("click", function () {
+//     startCamera();
+// });
+
+// // Voeg eventlistener toe aan video-element om afspelen te triggeren bij gebruikersinteractie
+// video.addEventListener('click', function () {
+//     video.play();
+// });
+
 const video = document.getElementById('video');
 const canvas = document.getElementById('canvas');
 const snap = document.getElementById('snap');
-const cameraBtn = document.getElementById('camera-btn');
+const uploadBtn = document.getElementById('upload-btn');
 const cameraContainer = document.getElementById('camera-container');
+const uploadUrl = "https://example.com/upload"; // URL om de afbeelding naar te uploaden
 
 const constraints = {
     video: true
@@ -66,10 +109,8 @@ async function startCamera() {
         const stream = await navigator.mediaDevices.getUserMedia(constraints);
         handleSuccess(stream);
         cameraContainer.style.display = 'block';
-        video.classList.add('active'); // Voeg class "active" toe aan video
-        canvas.classList.add('active'); // Voeg class "active" toe aan canvas
-        cameraBtn.style.display = 'none';
-        video.play(); // Start het afspelen van de video
+        video.classList.add('active');
+        canvas.classList.add('active');
     } catch (e) {
         console.error('Error: ', e);
     }
@@ -82,14 +123,16 @@ function handleSuccess(stream) {
 
 snap.addEventListener("click", function () {
     canvas.getContext("2d").drawImage(video, 0, 0, 640, 480);
+    uploadBtn.style.display = 'block';
 });
 
-cameraBtn.addEventListener("click", function () {
-    startCamera();
+uploadBtn.addEventListener("click", function () {
+    const imageData = canvas.toDataURL(); // Zet de afbeeldingdata om naar een DataURL
+    const xhr = new XMLHttpRequest(); // Maak een nieuwe XMLHttpRequest
+    xhr.open("POST", uploadUrl); // Stel de URL en methode in voor de upload
+    xhr.setRequestHeader("Content-Type", "application/json"); // Stel de content-type header in
+    xhr.send(JSON.stringify({ image: imageData })); // Verstuur de afbeeldingdata in een JSON object
 });
 
-// Voeg eventlistener toe aan video-element om afspelen te triggeren bij gebruikersinteractie
-video.addEventListener('click', function () {
-    video.play();
-});
-
+// Open de camera als de pagina geladen is
+startCamera();
