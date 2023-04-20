@@ -135,4 +135,7 @@ uploadBtn.addEventListener("click", function () {
 });
 
 // Open de camera als de pagina geladen is
-startCamera();
+cameraBtn.addEventListener("click", function () {
+    startCamera();
+    video.play();
+});
