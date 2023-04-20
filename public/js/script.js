@@ -91,4 +91,27 @@ cameraTrigger.addEventListener("click", function () {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
+
+    // send the image to the server
+    socket.emit('image', {
+        name: inputName.value,
+        image: cameraOutput.src
+    });
+});
+
+socket.on('image', (data) => {
+    let li = document.createElement('li');
+    let img = document.createElement('img');
+    img.src = data.image;
+    li.appendChild(img);
+    li.innerHTML += data.name;
+
+    // Check if the message is sent by the user
+    if (data.name === inputName.value) {
+        li.classList.add('current-user');
+    }
+
+    messages.appendChild(li);
+    typingState.innerHTML = "";
+    messages.scrollTop = messages.scrollHeight
 });
