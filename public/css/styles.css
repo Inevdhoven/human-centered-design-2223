@@ -188,15 +188,19 @@ section p {
 
 }
 
-main > section:first-of-type {
+/* main > section:first-of-type {
   display: none;
-}
+} */
+
+
 
 #camera, #camera--view, #camera--sensor, #camera--output{
   position: fixed;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  position: absolute;
+  inset: 0;
 }
 
 #camera--view, #camera--sensor, #camera--output{
@@ -228,4 +232,18 @@ main > section:first-of-type {
   top: 20px;
   right: 20px;
   z-index: 2;
+}
+
+#camera,
+#camera--view,
+#camera--trigger,
+#camera--output {
+  display: none;
+}
+
+#camera.active,
+#camera--view.active,
+#camera--trigger.active,
+#camera--output.active {
+  display: block;
 }
