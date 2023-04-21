@@ -237,13 +237,23 @@ section p {
 #camera,
 #camera--view,
 #camera--trigger,
-#camera--output {
+#camera--output,
+#camera--close,
+#camera--upload {
   display: none;
 }
 
 #camera.active,
 #camera--view.active,
 #camera--trigger.active,
-#camera--output.active {
+#camera--output.active,
+#camera--close.active,
+#camera--upload.active {
   display: block;
+}
+
+#camera--sensor,
+#camera--view {
+  position: fixed;
+  top: 3em;
 }
