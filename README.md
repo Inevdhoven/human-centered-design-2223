@@ -8,30 +8,34 @@ Voor het vak Human Centerd Design ga ik een nieuw functie aan een chat app toevo
 
 ## Table of Contents
 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Uitleg](#uitleg)
+- [Hoe installeer je dit project?](#hoe-installeer-je-dit-project)
+- [Hoe gebruik je dit project?](#hoe-gebruik-je-dit-project)
 - [Features](#features)
 - [Todo](#todo)
-- [Process](#process)
+- [Proces](#proces)
 - [License](#license)
+- [Bronnen](#bronnen)
 
-## Description
+## Uitleg
 
-## Installation
+## Hoe installeer je dit project?
 
-## Usage
+## Hoe gebruik je dit project?
 
 ## Features
 
 ## Todo
 
-## User
+## User senario
 
-(user senario)
-(Who? What? How? en Why?)
+Eric is 50 jaar en maakt door zijn handicap gebruik van een elektrische rolstoel. Door zijn handicap, kan hij zijn armen niet volledig omhoog bewegen en staan zijn handen anders. Hij werkt als toegankelijkheidsmedewerker en woont in Amsterdam in een focus groep, met 15 aangepaste woningen. Hier kan hij hulp krijgen met de dingen die hij niet geheel zelf kan. Zijn hobby’s zijn het kijken naar films en series, luisteren naar muziek, het spelen van bordspellen en het lezen van boeken. In zijn dagelijks leven maakt hij om te communiceren met mensen, net als veel anderen gebruik van chat apps. Om zijn emoties hierin te weergeven maakt hij vaak gebruik van emoji’s.
 
-## Process
+Er is alleen zoveel keuze uit verschillende emoji’s dat het erg lastig is om te kiezen wat nou precies zijn emotie omschrijft. Daarnaast hebben veel emoji’s voor verschillende culturen een andere mening.
+
+Hij wil dus graag dat het makkelijker wordt gemaakt om een emoji te kiezen met de juiste emotie en body language. Deze manier om een emoji te kiezen met de juiste emotie en body language moet daarbij rekening houden met zijn beperking, zo wil hij graag dat het makkelijk in gebruik is en dat hij er makkelijk door heen kan klikken met een muis of toetsenboord.
+
+## Proces
 
 Hier kun je meer lezen over mijn proces gedurende dit vak.
 
@@ -132,20 +136,7 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+## Bronnen
 
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+https://blog.prototypr.io/make-a-camera-web-app-tutorial-part-1-ec284af8dddf
+https://getstream.io/blog/create-effective-user-scenarios/
