@@ -46,102 +46,20 @@ socket.on('typing', (inputName) => {
     }, 3000);
 })
 
-socket.on('image', (data) => {
-    let li = document.createElement('li');
-    let img = document.createElement('img');
-    img.src = data.image;
-    li.appendChild(img);
-    li.innerHTML += data.name;
-
-    // Check if the message is sent by the user
-    if (data.name === inputName.value) {
-        li.classList.add('current-user');
-    }
-
-    messages.appendChild(li);
-    typingState.innerHTML = "";
-    messages.scrollTop = messages.scrollHeight
-});
-
 function addMessage(data) {
     messages.appendChild(Object.assign(document.createElement('li'), { textContent: data.name + ': ' + data.message }))
     messages.scrollTop = messages.scrollHeight
 }
 
-function addImage(data) {
-    let li = document.createElement('li');
-    let img = document.createElement('img');
-    img.src = data.image;
-    li.appendChild(img);
-    li.innerHTML += data.name;
+const popup = document.querySelector('.emoji-popup');
+const emojiBtn = document.querySelector('#emoji-btn');
+const closeBtn = document.querySelector('#close-popup');
 
-    // Check if the message is sent by the user
-    if (data.name === inputName.value) {
-        li.classList.add('current-user');
-    }
-
-    messages.appendChild(li);
-}
-
-
-// Set constraints for the video stream
-var constraints = { video: { facingMode: "user" }, audio: false };
-// Define constants
-const camera = document.querySelector('#camera');
-const cameraView = document.querySelector("#camera--view"),
-    cameraOutput = document.querySelector("#camera--output"),
-    cameraSensor = document.querySelector("#camera--sensor"),
-    cameraTrigger = document.querySelector("#camera--trigger"),
-    cameraBtn = document.querySelector('#camera-btn'),
-    cameraCloseBtn = document.querySelector('#camera--close'),
-    cameraUploadBtn = document.querySelector('#camera--upload');
-
-// Access the device camera and stream to cameraView
-function cameraStart() {
-    navigator.mediaDevices
-        .getUserMedia(constraints)
-        .then(function (stream) {
-            track = stream.getTracks()[0];
-            camera.classList.add("active");
-            cameraView.srcObject = stream;
-            cameraView.play();
-            cameraView.classList.add("active");
-            cameraTrigger.classList.add("active");
-            cameraCloseBtn.classList.add("active");
-            cameraUploadBtn.classList.add("active");
-        })
-        .catch(function (error) {
-            console.error("Oops. Something is broken.", error);
-        });
-}
-
-cameraCloseBtn.addEventListener("click", function () {
-    camera.classList.remove("active");
-    cameraView.classList.remove("active");
-    cameraTrigger.classList.remove("active");
-    cameraCloseBtn.classList.remove("active");
-    cameraUploadBtn.classList.remove("active");
-    cameraBtn.style.display = "block";
-    track.stop();
+emojiBtn.addEventListener('click', () => {
+    popup.classList.toggle('show');
 });
 
-cameraBtn.addEventListener("click", function () {
-    cameraBtn.style.display = "none";
-    cameraStart();
-});
-
-// Take a picture when cameraTrigger is tapped
-cameraTrigger.addEventListener("click", function () {
-    cameraOutput.classList.add("active");
-    cameraSensor.width = cameraView.videoWidth;
-    cameraSensor.height = cameraView.videoHeight;
-    cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
-    cameraOutput.src = cameraSensor.toDataURL("image/webp");
-    cameraOutput.classList.add("taken");
-
-    // send the image to the server
-    socket.emit('image', {
-        name: inputName.value,
-        image: cameraOutput.src
-    });
+closeBtn.addEventListener('click', () => {
+    console.log('close')
+    popup.classList.remove('show');
 });

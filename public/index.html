@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="css/styles.css">
   <title>SpeakEasy</title>
 
 </head>
+
 <body>
   <header>
     <h1>
-      Test
+      Chatroom
     </h1>
   </header>
   <main>
-    <section>
+    <section class="chat">
       <ul></ul>
       <p></p>
       <form>
@@ -27,21 +29,117 @@
         </fieldset>
       </form>
     </section>
-    <button id="camera-btn">Toegang tot camera</button>
-    <section id="camera">
-      <!-- Camera sensor -->
-      <canvas id="camera--sensor"></canvas>
-      <!-- Camera view -->
-      <video id="camera--view" autoplay playsinline></video>
-      <!-- Camera output -->
-      <img src="//:0" alt="" id="camera--output">
-      <!-- Camera trigger -->
-      <button id="camera--trigger">Take a picture</button>
-      <!-- Camera close -->
-      <button id="camera--close">Sluit camera</button>
-      <!-- Camera upload -->
-      <button id="camera--upload">Upload foto</button>
-    </section>
+    <button id="emoji-btn">Emoji toevoegen</button>
+    <div class="emoji-popup">
+      <button id="close-popup">
+        close
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          data-reactroot="">
+          <path fill="#fff"
+            d="M2.29289 2.29289C2.68342 1.90237 3.31658 1.90237 3.70711 2.29289L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L2.29289 3.70711C1.90237 3.31658 1.90237 2.68342 2.29289 2.29289Z"
+            clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
+          <path fill="#fff"
+            d="M21.7071 2.29289C22.0976 2.68342 22.0976 3.31658 21.7071 3.70711L3.70711 21.7071C3.31658 22.0976 2.68342 22.0976 2.29289 21.7071C1.90237 21.3166 1.90237 20.6834 2.29289 20.2929L20.2929 2.29289C20.6834 1.90237 21.3166 1.90237 21.7071 2.29289Z"
+            clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
+        </svg>
+      </button>
+      <section class="emoji">
+        <div class="face">
+          <div class="brows"></div>
+          <div class="eyes"></div>
+          <div class="mouth"></div>
+        </div>
+        <div class="bodylanguage"></div>
+      </section>
+      <section class="form">
+        <form action="">
+          <fieldset>
+            <legend>Kies ogen</legend>
+            <label for="eyes1">
+              <input type="radio" name="eyes" id="eyes1" value="eyes1">
+              <img src="img/eyes1.png" alt="eyes1">
+            </label>
+            <label for="eyes2">
+              <input type="radio" name="eyes" id="eyes2" value="eyes2">
+              <img src="img/eyes2.png" alt="eyes2">
+            </label>
+            <label for="eyes3">
+              <input type="radio" name="eyes" id="eyes3" value="eyes3">
+              <img src="img/eyes3.png" alt="eyes3">
+            </label>
+            <label for="eyes4">
+              <input type="radio" name="eyes" id="eyes4" value="eyes4">
+              <img src="img/eyes4.png" alt="eyes4">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Kies een mond</legend>
+            <label for="mouth1">
+              <input type="radio" name="mouth" id="mouth1" value="mouth1">
+              <img src="img/mouth1.png" alt="mouth1">
+            </label>
+            <label for="mouth2">
+              <input type="radio" name="mouth" id="mouth2" value="mouth2">
+              <img src="img/mouth2.png" alt="mouth2">
+            </label>
+            <label for="mouth3">
+              <input type="radio" name="mouth" id="mouth3" value="mouth3">
+              <img src="img/mouth3.png" alt="mouth3">
+            </label>
+            <label for="mouth4">
+              <input type="radio" name="mouth" id="mouth4" value="mouth4">
+              <img src="img/mouth4.png" alt="mouth4">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Kies wenkbrauwen</legend>
+            <label for="addbrows">
+              <input type="checkbox" name="addbrows" id="addbrows" value="addbrows">
+              Wil je wenkbrauwen toevoegen?
+            </label>
+            <label for="brows1">
+              <input type="radio" name="brows" id="brows1" value="brows1">
+              <img src="img/brows1.png" alt="brows1">
+            </label>
+            <label for="brows2">
+              <input type="radio" name="brows" id="brows2" value="brows2">
+              <img src="img/brows2.png" alt="brows2">
+            </label>
+            <label for="brows3">
+              <input type="radio" name="brows" id="brows3" value="brows3">
+              <img src="img/brows3.png" alt="brows3">
+            </label>
+            <label for="brows4">
+              <input type="radio" name="brows" id="brows4" value="brows4">
+              <img src="img/brows4.png" alt="brows4">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Voeg body language toe</legend>
+            <label for="addbodylanguage">
+              <input type="checkbox" name="addbodylanguage" id="addbodylanguage" value="addbodylanguage">
+              Wil je body language toevoegen?
+            </label>
+            <label for="bodylanguage1">
+              <input type="radio" name="bodylanguage" id="bodylanguage1" value="bodylanguage1">
+              <img src="img/bodylanguage1.png" alt="bodylanguage1">
+            </label>
+            <label for="bodylanguage2">
+              <input type="radio" name="bodylanguage" id="bodylanguage2" value="bodylanguage2">
+              <img src="img/bodylanguage2.png" alt="bodylanguage2">
+            </label>
+            <label for="bodylanguage3">
+              <input type="radio" name="bodylanguage" id="bodylanguage3" value="bodylanguage3">
+              <img src="img/bodylanguage3.png" alt="bodylanguage3">
+            </label>
+            <label for="bodylanguage4">
+              <input type="radio" name="bodylanguage" id="bodylanguage4" value="bodylanguage4">
+              <img src="img/bodylanguage4.png" alt="bodylanguage4">
+            </label>
+          </fieldset>
+        </form>
+      </section>
+    </div>
   </main>
   <footer>
 
@@ -50,5 +148,5 @@
   <script src="/socket.io/socket.io.js"></script>
   <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>
