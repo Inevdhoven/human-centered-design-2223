@@ -8,7 +8,6 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="css/styles.css">
   <title>SpeakEasy</title>
-
 </head>
 
 <body>
@@ -21,13 +20,15 @@
     <section class="chat">
       <ul></ul>
       <p></p>
-      <form>
-        <input type="text" placeholder="Naam" id="name" autocomplete="off">
-        <fieldset>
+      <div class="forms">
+        <form>
+          <input type="text" placeholder="Naam" id="name" autocomplete="off">
+        </form>
+        <form>
           <input type="text" placeholder="Message" id="message" autocomplete="off">
           <button id="send"><span>Send</span></button>
-        </fieldset>
-      </form>
+        </form>
+      </div>
     </section>
     <button id="emoji-btn">Emoji toevoegen</button>
     <div class="emoji-popup">
