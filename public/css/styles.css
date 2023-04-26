@@ -87,6 +87,16 @@ main {
   gap: 1em;
 }
 
+.forms form:first-of-type {
+  width: 12.5rem;
+}
+
+.forms form:nth-of-type(2) {
+  width: 20rem;
+  display: flex;
+  gap: 0.5em;
+}
+
 .forms form input {
   max-width: 18.75rem;
   width: 100%;
@@ -95,13 +105,24 @@ main {
   border-radius: 0.5rem;
 }
 
+.forms form button {
+  padding: 0 1em;
+}
+
+#emoji-btn {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border: none;
+  margin: 1em 0 0 0;
+}
+
 .emoji-popup {
   max-width: 60rem;
   width: 100%;
   padding: 2em 3em;
   border-radius: 2em;
 
-  display: none;
+  /* display: none; */
 
   position: fixed;
   top: 50%;
@@ -122,6 +143,7 @@ main {
   font-size: 0;
   background-color: transparent;
   position: absolute;
+  top: 3rem;
   right: 3rem;
 }
 
@@ -161,6 +183,10 @@ fieldset {
   display: inline-block;
 }
 
+.form form label[for="bodylanguage2"] img {
+  width: 20px;
+}
+
 .form form input {
   width: 4rem;
   height: 4rem;
@@ -195,10 +221,24 @@ fieldset {
 }
 
 .form form label img {
-  width: 100%;
-  height: 100%;
+  width: 2.5rem;
+  height: auto;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: var(--background-black);
+}
+
+dialog[open]:not(:focus-within) {
+  display: block;
+}
+
+/* Polyfill for Dialog on FF, Safari etc */
+.no-dialog dialog {
+  display: none;
+}
+
+.no-dialog dialog[open] {
+  display: block;
 }

@@ -55,11 +55,107 @@ const popup = document.querySelector('.emoji-popup');
 const emojiBtn = document.querySelector('#emoji-btn');
 const closeBtn = document.querySelector('#close-popup');
 
+// emojiBtn.addEventListener('click', () => {
+//     popup.classList.toggle('show');
+// });
+
+// closeBtn.addEventListener('click', () => {
+//     console.log('close')
+//     popup.classList.remove('show');
+// });
+
+
+
+var isDialogSupported = true;
+if (!window.HTMLDialogElement) {
+    document.body.classList.add("no-dialog");
+    isDialogSupported = false;
+}
+
 emojiBtn.addEventListener('click', () => {
-    popup.classList.toggle('show');
+    console.log('open popup')
+    if (isDialogSupported) {
+        modal.showModal();
+        console.log('show modal')
+    }
+    //   Focus first input when dialog opens
+    modal.querySelector("input").focus();
 });
 
 closeBtn.addEventListener('click', () => {
-    console.log('close')
-    popup.classList.remove('show');
+    console.log('close popup')
+    if (isDialogSupported) {
+        modal.close();
+    }
 });
+
+modal.addEventListener("transitionend", e => {
+    modal.querySelector("input").focus();
+});
+
+const dialog = document.querySelector('#modal');
+
+dialog.addEventListener('focusin', trapFocus);
+dialog.addEventListener('focusout', trapFocus);
+
+function trapFocus(event) {
+    console.log('trap focus')
+    const dialogElements = dialog.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    const firstElement = dialogElements[0];
+    const lastElement = dialogElements[dialogElements.length - 1];
+    const bodylanguage = document.querySelector('#bodylanguage input:last-of-type');
+    console.log(event.target)
+
+    if (document.activeElement === closeBtn) {
+        event.preventDefault();
+        console.log('close is focused')
+        closeBtn.addEventListener('keydown', (event) => {
+            if (event.key === 'Shift') {
+                console.log('shift tab pressed')
+                bodylanguage.focus();
+                event.preventDefault();
+            } else if (event.key === 'Tab') {
+                console.log('tab pressed')
+                firstElement.focus();
+                event.preventDefault();
+            }
+        })
+    }
+    if (document.activeElement === firstElement) {
+        event.preventDefault();
+        console.log('first element is focused')
+        firstElement.addEventListener('keydown', (event) => {
+            if (event.key === 'Shift') {
+                console.log('shift tab pressed')
+                closeBtn.focus();
+                event.preventDefault();
+            }
+        });
+    }
+}
+
+// function trapFocus(event) {
+//     console.log('trap focus')
+//     const dialogElements = dialog.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+//     const firstElement = dialogElements[0];
+//     const lastElement = dialogElements[dialogElements.length - 1];
+//     const bodylanguage = document.querySelector('#bodylanguage input');
+
+//     if (event.target === lastElement && !event.enterKey) {
+//         // If focus is going out of the dialog from the last element, set it to the first element
+//         console.log('focus last element')
+//         closeBtn.focus();
+//         event.preventDefault();
+//     } else if (event.target === closeBtn && !event.enterKey) {
+//         console.log('focus close button')
+//         firstElement.focus();
+//         event.preventDefault();
+//     } else if (event.target === firstElement && event.enterKey) {
+//         // If focus is going out of the dialog from the first element, set it to the last element
+//         console.log('focus first element')
+//         lastElement.focus();
+//         event.preventDefault();
+//     }
+// }
+
+
