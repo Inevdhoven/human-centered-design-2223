@@ -119,12 +119,31 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
             Manier vinden waarbij muis niet nodig is
         </li>
     </ul>
-    <h4>Nieuw idee voor de volgende test:</h4>
-    <p>Samen met Sasja heb ik een nieuw idee bedacht om verschillende emoji's te later veranderen van uitdrukken en body language. De gebruiker kan zelf aangeven hoeveel hij van wat wilt laten zien. Ik ga ervoor zorgen dat dit voor Eric te gebruiken is op de comupter. Dat hij er met toetsenbord en of muis doorheen kan gaan. Hier moet ik dus verschillende emoji's voor maken en ervoor zorgen dat er een soort formulier met keuze komt, waar Eric dan uit kan kiezen hoe hij bijvoorbeeld de ogen of mond wil hebben staan. Om body language to te voegen wil ik denk ik bijvoorbeeld bij het poppetje een duimpje of peace teken plaatsen.</p>
 </details>
 <details>
     <summary><h3>Test 2</h3></summary>
-    <p>Accordion_content</p>
+    <h4>Idee 2</h4>
+    <p>Samen met Sasja heb ik een nieuw idee bedacht om verschillende emoji's te laten veranderen van uitdrukingen en bodylanguage. De gebruiker kan zelf aangeven wat hij wilt laten zien. Ik ga ervoor zorgen dat dit voor Eric te gebruiken is op de comupter. Dat hij er met toetsenbord en of muis doorheen kan gaan en de keuzes kan maken. Standaard wil ik dat de gebruiker ogen en een mond kan toevoegen. Daarnaast kan de gebruiker kiezen of hij wenkbrauwen en of bodylanguage wil toevoegen. Doormiddel van tab, pijltjestoetsen, spacebar en enter kan Eric navigeren door de website. Daarnaast kan hij de muis gebruiken.</p>
+    <h4>Gemaakte opzetje:</h4>
+    <p>Voor dit idee heb ik een opzetje gemaakt waar het mogelijk is om in een chatroom een popup te openen waar je emoji's kan toevoegen. Door deze popup is het ook mogelijk te tabben, maar je kan ook met de muis een emoji naar keuze maken.</p>
+    <h4>Wat wil ik testen:</h4>
+    <ol>
+        <li>Het toevoegen van een emoji met de muis aan het chatgesprek</li>
+        <li>Het toevoegen van een emoji doormiddel van het toetsenbord aan het chatgesprek</li>
+    </ol>
+    <h4>Wat wil ik te weten komen:</h4>
+    <ul>
+        <li>Ik wil te weten komen of de gebruiker het fijner vind om met muis of toetsenbord te werken.</li>
+        <li>Ik wil te weten komen of de knoppen groot genoeg zijn.</li>
+        <li>Is het op deze manier goed te besturen of zijn er nog punten waar Eric moeite mee heeft.</li>
+    </ul>
+    <h4>Testplan</h4>
+    <ol>
+        <li>Vul uw naam in en stuur een chatbericht.</li>
+        <li>Open de popup voor het maken van de emoji's </li>
+        <li>Maak een emoji naar keuze</li>
+        <li>Stuur de emoji naar de chatroom</li>
+    </ol>
 </details>
 
 <details>
