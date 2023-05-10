@@ -83,15 +83,19 @@ main {
 }
 
 .forms {
+  width: 35rem;
+}
+
+.forms form {
   display: flex;
   gap: 1em;
 }
 
-.forms form:first-of-type {
+.forms #name {
   width: 12.5rem;
 }
 
-.forms form:nth-of-type(2) {
+.forms #message {
   width: 20rem;
   display: flex;
   gap: 0.5em;
@@ -228,6 +232,11 @@ fieldset {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--background-black);
+}
+
+#add-emoji {
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 dialog[open]:not(:focus-within) {

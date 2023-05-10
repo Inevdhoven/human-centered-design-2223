@@ -6,9 +6,10 @@ let send = document.querySelector('button#send');
 let typingState = document.querySelector('p');
 
 // send text
-document.querySelector('form').addEventListener('submit', event => {
+document.querySelector('form.message').addEventListener('submit', event => {
     event.preventDefault()
     let data = { name: inputName.value, message: inputText.value }
+    console.log(inputText.value)
     socket.emit('chat', data);
     console.log(inputName.value, inputText.value);
     inputText.value = '';
