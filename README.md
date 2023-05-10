@@ -12,8 +12,16 @@ Voor het vak Human Centerd Design ga ik een nieuw functie aan een chat app toevo
 - [Hoe installeer je dit project?](#hoe-installeer-je-dit-project)
 - [Hoe gebruik je dit project?](#hoe-gebruik-je-dit-project)
 - [Features](#features)
-- [Todo](#todo)
+- [User senario](#user-senario)
 - [Proces](#proces)
+  - [Test 1](#test-1)
+  - [Test 2](#test-2)
+  - [Uiteindelijk resultaat](#uiteindelijk-resultaat)
+- [Exclusive design Principles](#exclusive-design-principles)
+  - [Study situation](#study-situation)
+  - [Ignore conventions](#ignore-conventions)
+  - [Prioritise identity](#prioritise-identity)
+  - [Add nonsense](#add-nonsense)
 - [License](#license)
 - [Bronnen](#bronnen)
 
@@ -25,13 +33,52 @@ De opdracht is om een ontwerp te maken specifiek voor een persoon. In mijn geval
 
 ### Mijn idee
 
+Mijn idee is om aan de chat app een button toe te voegen, zodat als je dat wil je een emoji kan toevoegen. Wanneer je op de button klikt komt er een popup. Hierin kun je je eigen emoji samen stellen, om zo ervoor te zorgen dat het goed weergeeft wat jouw emotie is. Je kunt uit vier verschillend onderdelen kiezen. Je kunt ogen, een mond, wenkbrauwen en een bodylanguage toevoegen. Wenkbrauwen en een bodylanguage kunnen ook wegelaten worden, omdat je deze niet altijd wilt gebruiken.
+
+Mijn idee is te gebruiken met een muis of met het toetenbord, zodat je er of doorheen kan gaan doormiddel van het toetsenbord. Wanneer je in de popup bent met het samen stellen van de emoji kun je niet zomaar uit de popup gaan met het toetsenbord. Dit kan alleen wanneer je op het kruisje staat op op emoji versturen klikt. Met de muis kun je ook gewoon uit de popup gaan door op het kruisje te klikken of door op de button emoji versturen te klikken.
+
 ## Hoe installeer je dit project?
+
+Om dit project te installeren moet je de repository clonen naar je lokale machine. Dit doe je door een map te openen waar je de repository in wilt clonen. Vervolgens open je je terminal en typ je het volgende commando:
+
+```
+git clone https://github.com/Inevdhoven/human-centered-design-2223.git
+```
+
+Nu moet je naar de map gaan waar je de repository in hebt gecloned. Dit doe je door het volgende commando in te typen:
+
+```
+cd human-centerd-design-2223
+```
+
+Om de dependencies te installeren moet je het volgende commando uitvoeren:
+
+```
+npm install
+```
+
+Om het project te starten moet je het volgende commando uitvoeren:
+
+```
+npm run dev
+```
+
+Open het project in je browser door naar localhost:4343 te gaan.
 
 ## Hoe gebruik je dit project?
 
+Je kunt dit project gebruiken door je naam in het input veld met in het veld ernaast een bericht te schrijven. Vervolgens kun je op de button verstuur klikken om je bericht te versturen. Wanneer je een emoji wilt toevoegen kun je op de button emoji toevoegen klikken. Er opent dan een popup waar je je eigen emoji kunt samenstellen. Je kunt uit vier verschillende onderdelen kiezen. Je kunt ogen, een mond, wenkbrauwen en een bodylanguage toevoegen. Wenkbrauwen en een bodylanguage kunnen ook weggelaten worden, omdat je deze niet altijd wilt gebruiken. Wanneer je dan op versturen klikt word de emoji verstuurd naar in de chatroom.
+
 ## Features
 
-## Todo
+- Een chatroom waarin je berichten kunt sturen
+  - Een input veld waarin je je naam kunt invullen
+  - Een input veld waarin je een bericht kunt typen
+  - Een button om je bericht te versturen
+- Een popup waarin je je eigen emoji kunt samenstellen
+  - In de popup kunnen kiezen uit vier verschillende onderwerpen: Ogen, mond, wenkbrauwen en bodylanguage
+  - Wenkbrauwen en bodylanguage kunnen ook weggelaten worden
+  - De emoji kunnen versturen naar de chatroom
 
 ## User senario
 
