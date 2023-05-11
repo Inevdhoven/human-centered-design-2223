@@ -42,6 +42,7 @@ Voor het vak Human Centerd Design ga ik een nieuw functie aan een chat app toevo
   - [Ignore conventions](#ignore-conventions)
   - [Prioritise identity](#prioritise-identity)
   - [Add nonsense](#add-nonsense)
+- [Reflectie](#reflectie)
 - [License](#license)
 - [Bronnen](#bronnen)
 
@@ -272,6 +273,7 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
     <ul>
         <li>Wanneer je de verschillende onderdelen aanklikt deze ook echt op het hoofd van de emoji komen te staan.</li>
         <li>Wanneer je op verstuur emoji klikt dat de emoji dan ook echt wordt verstuurd.</li>
+        <li>Uitleg toevoegen over hoe je precies de app kunt gebruiken met het toetsenbord.</li>
     </ul>
 </details>
 
@@ -316,6 +318,10 @@ Het exclusieve ontwerpprincipe "add nonsense" betekent het toevoegen van onzin. 
 #### Hoe heb ik het toegepast?
 
 Aan de oplossing die ik heb gemaakt heb ik nonsens toegevoegd door de gebruiker zelf een emoji te laten samenstellen. Hierdoor kan de gebruiker zelf kiezen hoe hij zijn emotie wilt uitdrukken. Daarnaast kan de gebruiker ook kiezen of hij wenkbrauwen en bodylanguage wilt toevoegen. Dit is iets wat Eric graag wilde, omdat hij zelf niet goed bepaalde bodylanguage kan uitdrukken.
+
+## Reflectie
+
+Gedurende dit vak heb ik veel geleerd op het gebied van testen en opletten hoe een persoon bepaalde dingen doet. Daarnaast heb ik ook geleerd dat het ook nog kan verschillen per apparaat hoeveel een persoon met een beperking kan en dat veel websites en apps eigenlijk helemaal niet gemaakt zijn voor mensen met een beperking. Onder de tests kwam ook wel echt naar voren dat testen eigenlijk heel belangrijk is en dat het ook handig is om dit met personen te doen die een beperking hebben. Je weet namelijk niet wat zij wel en niet kunnen en daar heb je dan vooroordelen over die voor een groot deel niet kloppen. Ik wil daarom dan ook meenemen dat het erg belangrijk is om te testen en dit eventueel ook te doen met mensen met een beperking.
 
 ## License
 
