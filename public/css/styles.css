@@ -1,7 +1,7 @@
 /*************/
 /* FONTS */
 /*************/
-@import url("https://use.typekit.net/myy2iyg.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /*************/
 /* CSS RESET */
@@ -20,6 +20,7 @@ body {
   margin: 0;
   color: var(--white);
   background-color: var(--background-black);
+  font-family: 'Inter', sans-serif;
 }
 
 button:not([disabled]) {
@@ -93,12 +94,14 @@ main {
 
 .forms #name {
   width: 12.5rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .forms #message {
   width: 20rem;
   display: flex;
   gap: 0.5em;
+  font-family: 'Inter', sans-serif;
 }
 
 .forms form input {
@@ -109,14 +112,17 @@ main {
   border-radius: 0.5rem;
 }
 
-.forms form button {
-  padding: 0 1em;
+.forms form button,
+#emoji-btn,
+#add-emoji {
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  font-family: 'Inter', sans-serif;
 }
 
 #emoji-btn {
-  padding: 0.5em 1em;
-  border-radius: 0.5em;
-  border: none;
   margin: 1em 0 0 0;
 }
 
@@ -163,6 +169,13 @@ fieldset {
   padding: 0;
   border: none;
   margin-bottom: 2rem;
+}
+
+legend {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: var(--white);
 }
 
 .face {
@@ -214,6 +227,9 @@ fieldset {
 
   display: flex;
   align-items: center;
+
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
 }
 
 .form form label[for="addbrows"] input,
@@ -237,6 +253,8 @@ fieldset {
 #add-emoji {
   padding: 1rem;
   border-radius: 0.5rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 dialog[open]:not(:focus-within) {
