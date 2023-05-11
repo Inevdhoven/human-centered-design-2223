@@ -1,12 +1,32 @@
-# Human Centered Design
-
-Voor het vak Human Centerd Design ga ik een nieuw functie aan een chat app toevoegen. Voor dit vak ga ik een chat app maken met een focus op de gebruiker en hoe hij zicht op een krachtigere manier kan uitdrukken, doormiddel van emotie en body language. De gebruiker is Eric, hij is 50 jaar oud, woont in Amsterdam en gebruikt een elektrische rolstoel. Eric werkt als accessibility employee en helpt bijvoorbeeld bij het toegankelijker maken van gebouwen voor mensen met prikkelgevoeligheid.
-
-> Voor Eric zijn emoji's niet krachtig genoeg. Hij wil een manier om zijn emotie en body language krachtiger te kunnen uiten in chat apps, zoals Signal.
+# Kies je emoji in een chat app
 
 (Here an image of my work)
 
-## Table of Contents
+## Onderzoeksvraag
+
+> Voor Eric zijn emoji's niet krachtig genoeg. Hij wil een manier om zijn emotie en body language krachtiger te kunnen uiten in chat apps, zoals Signal.
+
+## Probleemdefinitie
+
+Eric maakt gebruik van een elktrische rolstoel door zijn beperking. Door deze beperking kan hij zijn armen niet volledig optillen en kan hij zijn handen en vingers minder goed gebruiken. Hierdoor zijn voor hem bepaalde bewegingen en het bedienen van zijn laptop of telefoon lastiger. Hij maakt net als bijna iedereen dagelijks gebruik van chatapps om te kunnen communiceren met anderen. In deze chatapps zitten mega veel emoji's, waaruit Eric het lastig vind om te kunnen kiezen. Dit komt doorat hij vaak niet goed weet welke emoji nou precies goed bij zijn emotie past. Daarnaast hebben emoji's in verschillende landen ook nog eens verschillende betekenissen hebben, wat het nog lastiger maakt om er een uit te kiezen.
+
+## Oplossing
+
+Mijn oplossing is om een button toe te voegen aan de chat app. Door op de button emoji toevoegen te klikken word er een popup geopend waar Eric zijn eigen emoji kan samenstellen. Hij kan uit vier verschillende onderdelen kiezen. Hij kan kiezen uit de onderdelen ogen, mond, wenkbrauwen en bodylanguage. Omdat niet elke emoji wenkbrauwen of bodylanguage heeft, kan Eric er ook voor kiezen om deze niet toe te voegen. Wanneer hij klaar is met het samenstellen van zijn emoji kan hij deze versturen naar de chatroom.
+
+Dan heb ik ervoor gekozen om de chatapp en popup met het maken van de emoji bedienbaar te maken met muis en toetsenbord. Wanneer je in de chatapp bent kun je met tab van het ene element naar het andere element gaan. Wanneer je in de popup bent kun je ook met tab door de elementen. Bij de radio buttons kun je doormiddel van de pijltjes toetsen van de ene naar de andere radio button.
+
+_Mijn chatapp werkt niet helemaal, ik heb geprobeerd zo ver mogelijk te komen in de tijd die ik had._
+
+<hr>
+
+# Documentatie
+
+## Introductie
+
+Voor het vak Human Centerd Design ga ik een nieuw functie aan een chat app toevoegen. Voor dit vak ga ik een chat app maken met een focus op de gebruiker en hoe hij zicht op een krachtigere manier kan uitdrukken, doormiddel van emotie en body language. De gebruiker is Eric, hij is 50 jaar oud, woont in Amsterdam en gebruikt een elektrische rolstoel. Eric werkt als accessibility employee en helpt bijvoorbeeld bij het toegankelijker maken van gebouwen voor mensen met prikkelgevoeligheid.
+
+## Inhoud
 
 - [Uitleg](#uitleg)
 - [Hoe installeer je dit project?](#hoe-installeer-je-dit-project)
@@ -245,9 +265,14 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
     <p>Bij de laaste test heb ik verschillende bevindingen opgedaan. Zo ben ik er achter gekomen, dat Eric vooral gebruik maakt van de pijltjes toetsen inplaats van tab. Dit omdat hij eerst niet door had dat hij tab kon gebruiken om van element naar element te gaan en door gamen gewend is de pijltjes toetsen te gebruiken. Ik wil in mijn eindresultaat of voor zorgen dat wanneer je voor het eerst op de site komt er een popup komt met de verschillende manieren hoe je de site kunt gebruiken of tab veranderen naar de pijltjes toetsen. Het veranderen van de pijltjes toesten is wel lastig, omdat je met tab van formulier element naar een ander element gaat en met de pijltjes toetsen van radio button naar naar radio button gaat. Dus dan moet ik nog even kijken hoe ik dat het beste kan oplossen. Daarnaast is het gebruiken van tab het meest gebruikt wanneer je met het toetsenbord van element naar element gaat.</p>
     <p>Daarnaast gaf Eric aan dat hij het fijn zou vinden als je niet eerst zou moeten aangeven of je wenkbrauwen of bodylanguage wil toevoegen, doormiddel van het klikken op de checkbox. Maar meteen op de wenkbrauwen of bodylanguage icoontjes kan klikken en wanneer deze niet zijn geselecteerd dan worden ze ook niet toegevoegd.</p>
     <h4>Wat heb ik nog kunnen aanpassen:</h4>
-    <p></p>
+    <p>In de tijd die ik had heb ik er nog voor kunnen zorgen dat wanneer je op een van de wenkbrauwen of bodylangauge klikt de checkbox er boven word aangevinkt zodat deze kan worden toegevoegd.</p>
     <h4>Wat had ik nog willen aanpassen/toevoegen:</h4>
-    <p></p>
+    <p>Ik heb helaas niet genoeg tijd gehad voor deze opdracht om alles geheel werkend te krijgen. Dit komt ook voor een deel doordat ik na de eerste test voor iets heel anders ben gegaan en dus voor een deel opnieuw ben begonnen. Om zo tot een beter passende uitwerking te komen.</p>
+    <p>De onderdelen die ik graag nog had willen toevoegen zijn:</p>
+    <ul>
+        <li>Wanneer je de verschillende onderdelen aanklikt deze ook echt op het hoofd van de emoji komen te staan.</li>
+        <li>Wanneer je op verstuur emoji klikt dat de emoji dan ook echt wordt verstuurd.</li>
+    </ul>
 </details>
 
 ## Exclusive Design Principles
