@@ -9,9 +9,9 @@ let typingState = document.querySelector('p');
 document.querySelector('form.message').addEventListener('submit', event => {
     event.preventDefault()
     let data = { name: inputName.value, message: inputText.value }
-    console.log(inputText.value)
+    // console.log(inputText.value)
     socket.emit('chat', data);
-    console.log(inputName.value, inputText.value);
+    // console.log(inputName.value, inputText.value);
     inputText.value = '';
 })
 
@@ -40,7 +40,7 @@ socket.on('chat', (data) => {
 })
 
 socket.on('typing', (inputName) => {
-    console.log(inputName);
+    // console.log(inputName);
     typingState.innerHTML = (inputName + " is aan het typen...")
     setTimeout(() => {
         typingState.innerHTML = "";
@@ -77,14 +77,14 @@ emojiBtn.addEventListener('click', () => {
     console.log('open popup')
     if (isDialogSupported) {
         modal.showModal();
-        console.log('show modal')
+        // console.log('show modal')
     }
     //   Focus first input when dialog opens
     modal.querySelector("input").focus();
 });
 
 closeBtn.addEventListener('click', () => {
-    console.log('close popup')
+    // console.log('close popup')
     if (isDialogSupported) {
         modal.close();
     }
@@ -105,18 +105,18 @@ function trapFocus(event) {
     const firstElement = dialogElements[0];
     const lastElement = dialogElements[dialogElements.length - 1];
     const bodylanguage = document.querySelector('#bodylanguage input:last-of-type');
-    console.log(event.target)
+    // console.log(event.target)
 
     if (document.activeElement === closeBtn) {
         event.preventDefault();
-        console.log('close is focused')
+        // console.log('close is focused')
         closeBtn.addEventListener('keydown', (event) => {
             if (event.key === 'Shift') {
-                console.log('shift tab pressed')
+                // console.log('shift tab pressed')
                 bodylanguage.focus();
                 event.preventDefault();
             } else if (event.key === 'Tab') {
-                console.log('tab pressed')
+                // console.log('tab pressed')
                 firstElement.focus();
                 event.preventDefault();
             }
@@ -124,10 +124,10 @@ function trapFocus(event) {
     }
     if (document.activeElement === firstElement) {
         event.preventDefault();
-        console.log('first element is focused')
+        // console.log('first element is focused')
         firstElement.addEventListener('keydown', (event) => {
             if (event.key === 'Shift') {
-                console.log('shift tab pressed')
+                // console.log('shift tab pressed')
                 closeBtn.focus();
                 event.preventDefault();
             }
@@ -135,28 +135,31 @@ function trapFocus(event) {
     }
 }
 
-// function trapFocus(event) {
-//     console.log('trap focus')
-//     const dialogElements = dialog.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
-//     const firstElement = dialogElements[0];
-//     const lastElement = dialogElements[dialogElements.length - 1];
-//     const bodylanguage = document.querySelector('#bodylanguage input');
+let inputaddBrows = document.querySelector('label[for="addbrows"] input#addbrows');
+let inputBrows = document.querySelectorAll('input[name="brows"]');
 
-//     if (event.target === lastElement && !event.enterKey) {
-//         // If focus is going out of the dialog from the last element, set it to the first element
-//         console.log('focus last element')
-//         closeBtn.focus();
-//         event.preventDefault();
-//     } else if (event.target === closeBtn && !event.enterKey) {
-//         console.log('focus close button')
-//         firstElement.focus();
-//         event.preventDefault();
-//     } else if (event.target === firstElement && event.enterKey) {
-//         // If focus is going out of the dialog from the first element, set it to the last element
-//         console.log('focus first element')
-//         lastElement.focus();
-//         event.preventDefault();
-//     }
-// }
+console.log(inputaddBrows, inputBrows)
 
+inputBrows.forEach((input) => {
+    input.addEventListener('change', () => {
+        if (input.checked) {
+            inputaddBrows.checked = true;
+            console.log('checked')
+        }
+    })
+});
+
+let inputaddBodylanguage = document.querySelector('label[for="addbodylanguage"] input#addbodylanguage');
+let inputBodylanguage = document.querySelectorAll('input[name="bodylanguage"]');
+
+console.log(inputaddBodylanguage, inputBodylanguage)
+
+inputBodylanguage.forEach((input) => {
+    input.addEventListener('change', () => {
+        if (input.checked) {
+            inputaddBodylanguage.checked = true;
+            console.log('checked')
+        }
+    })
+});
 
