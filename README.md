@@ -275,6 +275,8 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
         <li>Wanneer je op verstuur emoji klikt dat de emoji dan ook echt wordt verstuurd.</li>
         <li>Uitleg toevoegen over hoe je precies de app kunt gebruiken met het toetsenbord.</li>
     </ul>
+  <h4>Het eindresultaat</h4>
+  ![eindresultaat](https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/b50bff6a-6c44-485d-ba0b-c92168b83fbc)
 </details>
 
 ## Exclusive Design Principles
