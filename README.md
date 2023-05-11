@@ -241,11 +241,16 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
 </details>
 
 <details>
-    <summary><h3>Uiteindelijk resultaat</h3></summary>
+    <summary><h3>Eindresultaat</h3></summary>
+    <p>Bij de laaste test heb ik verschillende bevindingen opgedaan. Zo ben ik er achter gekomen, dat Eric vooral gebruik maakt van de pijltjes toetsen inplaats van tab. Dit omdat hij eerst niet door had dat hij tab kon gebruiken om van element naar element te gaan en door gamen gewend is de pijltjes toetsen te gebruiken. Ik wil in mijn eindresultaat of voor zorgen dat wanneer je voor het eerst op de site komt er een popup komt met de verschillende manieren hoe je de site kunt gebruiken of tab veranderen naar de pijltjes toetsen. Het veranderen van de pijltjes toesten is wel lastig, omdat je met tab van formulier element naar een ander element gaat en met de pijltjes toetsen van radio button naar naar radio button gaat. Dus dan moet ik nog even kijken hoe ik dat het beste kan oplossen. Daarnaast is het gebruiken van tab het meest gebruikt wanneer je met het toetsenbord van element naar element gaat.</p>
+    <p>Daarnaast gaf Eric aan dat hij het fijn zou vinden als je niet eerst zou moeten aangeven of je wenkbrauwen of bodylanguage wil toevoegen, doormiddel van het klikken op de checkbox. Maar meteen op de wenkbrauwen of bodylanguage icoontjes kan klikken en wanneer deze niet zijn geselecteerd dan worden ze ook niet toegevoegd.</p>
+    <h4>Wat heb ik nog kunnen aanpassen:</h4>
+    <p></p>
+    <h4>Wat had ik nog willen aanpassen/toevoegen:</h4>
     <p></p>
 </details>
 
-## Exclusive design Principles
+## Exclusive Design Principles
 
 ### Study situation
 
