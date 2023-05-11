@@ -271,7 +271,6 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
     <p>Ik heb helaas niet genoeg tijd gehad voor deze opdracht om alles geheel werkend te krijgen. Dit komt ook voor een deel doordat ik na de eerste test voor iets heel anders ben gegaan en dus voor een deel opnieuw ben begonnen. Om zo tot een beter passende uitwerking te komen.</p>
     <p>De onderdelen die ik graag nog had willen toevoegen zijn:</p>
     <ul>
-        <li>Wanneer je de verschillende onderdelen aanklikt deze ook echt op het hoofd van de emoji komen te staan.</li>
         <li>Wanneer je op verstuur emoji klikt dat de emoji dan ook echt wordt verstuurd.</li>
         <li>Uitleg toevoegen over hoe je precies de app kunt gebruiken met het toetsenbord.</li>
     </ul>
