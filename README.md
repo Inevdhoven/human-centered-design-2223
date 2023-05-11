@@ -186,6 +186,9 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
         <li>Het toevoegen van een emoji met de muis aan het chatgesprek</li>
         <li>Het toevoegen van een emoji doormiddel van het toetsenbord aan het chatgesprek</li>
     </ol>
+  <img width="1437" alt="chatroom_zonder_berichten" src="https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/f43bec01-9b51-4cd2-8727-9bd53ee5dce0">
+<img width="1440" alt="chatroom_met_bericht" src="https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/da94eedd-a229-4074-8912-3a43e119bc72">
+<img width="1438" alt="emoij_popup" src="https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/0299b214-7812-44e7-b33d-06bc71a0e22f">
     <h4>Wat wil ik te weten komen:</h4>
     <ul>
         <li>
