@@ -1,6 +1,6 @@
 # Kies je emoji in een chat app
 
-![kies_je_emotie](https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/ceb35ce8-9b7e-4b47-8ed4-60a0a97561a5)
+![kies_je_emoji](https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/cc6a0c3f-363f-42a2-8b1c-fd0642addb7b)
 
 ## Onderzoeksvraag
 
