@@ -103,6 +103,10 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
     <p>Ik hoorde dat je dit ook in de app BeReal hebt dat je daar ook aan een emoij een foto kan koppelen die de emotie weergeeft.</p>
     <h4>Gemaakt opzetje:</h4>
     <p>Om mijn idee te kunnen testen heb ik een opzetje gemaakt waarbij je een foto kan nemen van jezelf en dat je deze dan kan terug zien. Dit heb ik gemaakt en heb ik laten testen.</p>
+  <img width="360" alt="chatroom app test 1" src="https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/f17af4b5-0550-444e-b435-dc748c8dee91">
+<img width="361" alt="chatroom bericht gestuurd test 1" src="https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/c977cee1-a23e-4bb1-ae75-c0d8c664fd75">
+<img width="362" alt="chatroom camera open en foto gemaakt test 1" src="https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/2f78c1bf-466a-4fe1-9418-e794200d6e7a">
+
     <h4>Vragen die ik wil stellen onder de eerste test:</h4>
     <ol>
         <li>
