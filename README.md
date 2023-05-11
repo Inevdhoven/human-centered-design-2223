@@ -276,7 +276,7 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
         <li>Uitleg toevoegen over hoe je precies de app kunt gebruiken met het toetsenbord.</li>
     </ul>
   <h4>Het eindresultaat</h4>
-  ![eindresultaat](https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/2b5d1320-7c95-448e-a5b3-b098c5b8321b)
+  <img alt="eindresultaat" src="https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/2b5d1320-7c95-448e-a5b3-b098c5b8321b">
 
 </details>
 
