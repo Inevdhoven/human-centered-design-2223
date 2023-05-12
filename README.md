@@ -276,6 +276,8 @@ Hier kun je meer lezen over mijn proces gedurende dit vak.
     </ul>
   <h4>Het eindresultaat</h4>
 <img width="1440" alt="eindresultaat" src="https://github.com/Inevdhoven/human-centered-design-2223/assets/43877754/c58b9903-d386-4cfd-8f08-bcb55e6b1dbe">
+  
+   <p>De resultaten van de testen zijn te vinden in mijn de branches test1 en test2. In deze branches kun je de code zien van hoe het ontwerp er toen uit zag.</p>
 
 </details>
 
